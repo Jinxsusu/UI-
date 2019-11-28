@@ -1,0 +1,39 @@
+.header {
+    background-color: #fff;
+
+    .am-card {
+        color: #fff;
+        position: relative;
+        height: 254px;
+        .am-card-body {
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+            background: url('../../assets/images/home.png') no-repeat;
+            background-size: contain;
+            &::before {
+                content: '';
+                background: url('../../assets/images/arrow.png');
+            }
+        }
+
+        .am-card-footer {
+            padding: 0;
+            color: #fff;
+            position: absolute;
+            left: 18px;
+            top: 200px;
+            font-size: 26/2px;
+            line-height: 18px;
+
+            .am-card-footer-content {
+                width: 100px;
+            }
+
+            .am-card-footer-extra {
+                text-align: left;
+            }
+        }
+
+    }
+}
