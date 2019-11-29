@@ -1,34 +1,162 @@
-.header {
-  background-color: #fff;
-}
-.header .am-card {
-  color: #fff;
+.home .header {
   position: relative;
   height: 254px;
-}
-.header .am-card .am-card-body {
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
+  width: 375px;
   background: url('../../assets/images/home.png') no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-.header .am-card .am-card-body::before {
+.home .header .title {
+  height: 25px;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 31.5px;
+  font-family: "PingFang-SC-Bold";
+}
+.home .header .title::before {
   content: '';
-  background: url('../../assets/images/arrow.png');
+  background: url('../../assets/images/arrow.png') no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  left: 11.5px;
+  top: 34px;
+  width: 9.85px;
+  height: 17px;
 }
-.header .am-card .am-card-footer {
-  padding: 0;
+.home .header .body {
+  height: 18.5px;
+  line-height: 18.5px;
+  font-size: 13px;
+  font-family: 'PingFang-SC-Bold', 'PingFang-SC';
   color: #fff;
   position: absolute;
+  top: 176.5px;
   left: 18px;
-  top: 200px;
-  font-size: 13px;
-  line-height: 18px;
 }
-.header .am-card .am-card-footer .am-card-footer-content {
-  width: 100px;
-}
-.header .am-card .am-card-footer .am-card-footer-extra {
+.home .header .body span:nth-child(1) {
+  width: 64.5px;
   text-align: left;
+  margin-right: 4.5px;
+}
+.home {
+  position: relative;
+}
+.home .carInfo {
+  box-sizing: border-box;
+  height: 92px;
+  width: 345px;
+  background: #fff;
+  position: absolute;
+  top: 207px;
+  left: 15px;
+  padding: 12.5px 30px 13px 30px;
+  font-weight: 500;
+  -moz-box-shadow: 2px 2px 10px #ccc;
+  -webkit-box-shadow: 2px 2px 10px #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+}
+.home .carInfo p {
+  font-family: "PingFang-SC-Medium";
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .carInfo p:nth-child(1) {
+  margin-bottom: 24px;
+}
+.home .carInfo p span:nth-child(2) {
+  color: #333333;
+}
+.home .brand {
+  width: 460px;
+  height: 175px;
+  margin-top: 64.5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  padding-top: 5.5px;
+}
+.home .brand .heading {
+  margin-left: 5px;
+  width: 134.5px;
+  height: 22.5px;
+  background: url(../../assets/images/heading.png) no-repeat;
+  background-size: 134.5px;
+}
+.home .brand .content {
+  margin-top: 13px;
+  padding-bottom: 5px;
+  overflow: auto;
+}
+.home .brand .content .item {
+  margin-left: 5px;
+  margin-top: 13px;
+  box-shadow: 0 0 5px #ccc;
+  margin-right: 9.5px;
+  width: 91px;
+  height: 103px;
+  position: relative;
+  float: left;
+}
+.home .brand .content .item .hot {
+  position: absolute;
+  left: 3px;
+  top: 2.5px;
+  width: 26px;
+  height: 12.5px;
+}
+.home .brand .content .item .logo {
+  position: absolute;
+  width: 31.45px;
+  height: 29.5px;
+  left: 30px;
+  top: 23px;
+}
+.home .brand .content .item .brandName {
+  position: absolute;
+  width: 100%;
+  height: 18.5px;
+  font-size: 13px;
+  font-family: "PingFang-SC-Medium";
+  font-weight: 500;
+  line-height: 18.5px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  top: 65.5px;
+}
+.home .brand .content .item .success {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 84.5px;
+  left: 73.5px;
+}
+.home .agreement {
+  background-color: #fff;
+  padding: 19.5px 15.5px;
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+  font-family: 'PingFang-SC;';
+}
+.home .agreement span {
+  color: #3D85D0;
+  display: inline;
+}
+.home .btn {
+  padding: 31.5px 22.5px 27px;
+}
+.home .btn p {
+  width: 330px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: center;
+  background-color: #c50a0a;
 }

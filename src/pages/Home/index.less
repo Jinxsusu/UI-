@@ -1,39 +1,201 @@
-.header {
-    background-color: #fff;
-
-    .am-card {
-        color: #fff;
+.home {
+    .header {
         position: relative;
         height: 254px;
-        .am-card-body {
-            font-size: 18px;
-            text-align: center;
+        width: 375px;
+        background: url('../../assets/images/home.png') no-repeat;
+        background-size: cover;
+
+        .title {
+            height: 25px;
             color: #fff;
-            background: url('../../assets/images/home.png') no-repeat;
-            background-size: contain;
+            line-height: 25px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            padding-top: 31.5px;
+            font-family: "PingFang-SC-Bold";
+
+            //箭头
             &::before {
                 content: '';
-                background: url('../../assets/images/arrow.png');
+                background: url('../../assets/images/arrow.png') no-repeat;
+                background-size: cover;
+                content: "";
+                position: absolute;
+                left: 23/2px;
+                top: 68/2px;
+                width: 19.7/2px;
+                height: 34/2px;
             }
         }
 
-        .am-card-footer {
-            padding: 0;
+        .body {
+            height: 37/2px;
+            line-height: 37/2px;
+            font-size: 26/2px;
+            font-family: 'PingFang-SC-Bold', 'PingFang-SC';
             color: #fff;
             position: absolute;
+            top: 353/2px;
             left: 18px;
-            top: 200px;
-            font-size: 26/2px;
-            line-height: 18px;
 
-            .am-card-footer-content {
-                width: 100px;
+            span {
+                &:nth-child(1) {
+                    width: 129/2px;
+                    text-align: left;
+                    margin-right: 4.5px;
+                }
             }
 
-            .am-card-footer-extra {
-                text-align: left;
+        }
+    }
+}
+
+//头部
+
+
+.home {
+    position: relative;
+
+    .carInfo {
+        box-sizing: border-box;
+        height: 184/2px;
+        width: 345px;
+        background: #fff;
+        position: absolute;
+        top: 414/2px;
+        left: 15px;
+        padding: 25/2px 30px 13px 30px;
+        font-weight: 500;
+        -moz-box-shadow: 2px 2px 10px #ccc;
+        -webkit-box-shadow: 2px 2px 10px #ccc;
+        box-shadow: 2px 2px 10px #ccc;
+
+        p {
+            font-family: "PingFang-SC-Medium";
+            font-weight: 500;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:nth-child(1) {
+                margin-bottom: 24px;
+            }
+
+            span {
+                &:nth-child(2) {
+                    color: #333333;
+                }
             }
         }
+    }
+}
 
+//车辆信息
+
+.home {
+    .brand {
+        width: 375+85px;
+        height: 175px;
+        margin-top: 129/2px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        padding-top: 5.5px;
+
+        .heading {
+            margin-left: 5px;
+            width: 269/2px;
+            height: 45/2px;
+            background: url(../../assets/images/heading.png) no-repeat;
+            background-size: 269/2px;
+        }
+
+        .content {
+            margin-top: 13px;
+            padding-bottom: 5px;
+            overflow: auto;
+            .item {
+                margin-left: 5px;
+                margin-top: 13px;
+                box-shadow: 0 0 5px #ccc;
+                margin-right: 19/2px;
+                width: 91px;
+                height: 103px;
+                position: relative;
+                float: left;
+
+                .hot {
+                    position: absolute;
+                    left: 3px;
+                    top: 2.5px;
+                    width: 26px;
+                    height: 12.5px;
+                }
+
+                .logo {
+                    position: absolute;
+                    width: 62.9/2px;
+                    height: 59/2px;
+                    left: 30px;
+                    top: 23px;
+                }
+
+                .brandName {
+                    position: absolute;
+                    width: 100%;
+                    height: 37/2px;
+                    font-size: 26/2px;
+                    font-family: "PingFang-SC-Medium";
+                    font-weight: 500;
+                    line-height: 37/2px;
+                    text-align: center;
+                    letter-spacing: 1/2px;
+                    top: 131/2px;
+                }
+
+                .success {
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    top: 169/2px;
+                    left: 147/2px;
+                }
+            }
+        }
+    }
+}
+//保险品牌
+
+.home{
+    .agreement{
+        background-color: #fff;
+        padding:39/2px 31/2px;
+        font-size:24/2px;
+        color: #333;
+        font-weight:500;
+        font-family: 'PingFang-SC;';
+        span{
+            color: #3D85D0;
+            display: inline;
+        }
+    }
+}
+
+//协议
+.home {
+    .btn{
+        padding:63/2px 45/2px 54/2px;
+        p{
+           width: 330px;
+           height: 45px;
+           color:rgba( 255,255,255,1);
+           font-size:17px;
+           font-weight:500;
+           line-height:45px;
+           text-align: center;
+           background-color: #c50a0a;
+        }
     }
 }
