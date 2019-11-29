@@ -20,13 +20,17 @@ class OCR extends Component {
                 <div className="push">
                     <img src={require('../../assets/images/ocr.png')} alt="" />
                 </div>
-                <List renderHeader={() => 'Format'}>
+                <List>
                     <InputItem
-                        {...getFieldProps('bankCard', {
-                            initialValue: '8888 8888 8888 8888',
-                        })}
-                        type="bankCard"
-                    >银行卡</InputItem>
+                        editable={false}
+                    >行驶证基本信息</InputItem>
+
+                    <InputItem
+                        {...getFieldProps('focus')}
+                        clear
+                        placeholder="click the button below to focus"
+                        ref={el => this.inputRef = el}
+                    >标题</InputItem>
                     <InputItem
                         {...getFieldProps('phone')}
                         type="phone"

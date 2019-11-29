@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: #FBFBFB;
+
     .header {
         width: 100%;
         height: 64-29.5px;
@@ -12,6 +13,7 @@
             font-weight: 500;
             color: rgba(51, 51, 51, 1);
         }
+
         img {
             margin-left: 23/2px;
             margin-right: 257/2px;
@@ -24,12 +26,35 @@
     .push {
         box-sizing: border-box;
         background: #fff;
-        padding: 83/2px 82/2px 84/2px 85/2px;;
-        img{
-        box-shadow: 3px 3px 5px #ccc;
-        width: 583/2px;
-        height: 319/2px;
-       
+        padding: 83/2px 82/2px 84/2px 85/2px;
+        ;
+
+        img {
+            box-shadow: 3px 3px 5px #ccc;
+            width: 583/2px;
+            height: 319/2px;
+
+        }
+    }
+
+    .am-list {
+        .am-list-item {
+
+            // 标题
+            &:first-child {
+                height: 258/4px;
+                .am-input-label {
+                    font-size: 17px;
+                    font-family: "PingFang-SC-Bold";
+                    font-weight: bold;
+                    color: rgba(34, 34, 34, 1);
+                    letter-spacing: 1px;
+                }
+            }
+        }
+
+        .am-input-label {
+            width: 125px;
         }
     }
 

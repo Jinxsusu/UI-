@@ -4,7 +4,7 @@ font-weight:500;
 color:#666666;
 background-color: #fff;
 height:100%;
-width: 100%;
+overflow: auto;
 }
 
 #root,

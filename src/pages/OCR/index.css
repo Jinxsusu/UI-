@@ -30,3 +30,16 @@
   width: 291.5px;
   height: 159.5px;
 }
+.OCR .am-list .am-list-item:first-child {
+  height: 64.5px;
+}
+.OCR .am-list .am-list-item:first-child .am-input-label {
+  font-size: 17px;
+  font-family: "PingFang-SC-Bold";
+  font-weight: bold;
+  color: #222222;
+  letter-spacing: 1px;
+}
+.OCR .am-list .am-input-label {
+  width: 125px;
+}
