@@ -1,5 +1,7 @@
-.home .header {
+.App {
   position: relative;
+}
+.home .header {
   height: 254px;
   width: 375px;
   background: url('../../assets/images/home.png') no-repeat;
@@ -40,9 +42,6 @@
   width: 64.5px;
   text-align: left;
   margin-right: 4.5px;
-}
-.home {
-  position: relative;
 }
 .home .carInfo {
   box-sizing: border-box;
@@ -149,6 +148,8 @@
 }
 .home .btn {
   padding: 31.5px 22.5px 27px;
+  position: absolute;
+  bottom: 27px;
 }
 .home .btn p {
   width: 330px;

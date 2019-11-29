@@ -1,28 +1,14 @@
-import React from 'react';
-import Home from './pages/Home';
 
+import React, { Component } from 'react'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <  Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-        </Switch>
+export default class App extends Component {
+  render() {
+
+    return (
+      <div>
+        {this.props.children}
       </div>
-    </Router>
-
-  );
+    )
+  }
 }
 
-export default App;

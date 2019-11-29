@@ -1,8 +1,15 @@
-body{
+body,html{
 font-family:"PingFang-SC-Medium","PingFang-SC";
 font-weight:500;
 color:#666666;
 background-color: #fff;
+height:100%;
+width: 100%;
+}
+
+#root,
+.App {
+    height: 100%;
 }
 p{
     padding: 0;
